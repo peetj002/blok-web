@@ -1,0 +1,173 @@
+/* Algemene onderdelen */
+
+* {
+    max-width: 100%;
+}
+
+body {
+    background-color: #e6e6e7;
+    font-family: Arial;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 2.25em;
+    margin: -10px;
+    text-shadow: 1px 1px 4px #000000;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #06183D;
+    font-size: 1.2em;
+    padding-left: 3%;
+}
+
+p {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+/* Navigatiebalk Eurostar */
+
+nav {
+    background-color: #06183D;
+    padding: 1em;
+}
+
+nav img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+/* Foto van de banner, 'welkom op de verhalen website' */
+
+#bannerfoto {
+    background-image: url(boeken.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-bottom: 8px solid #24b5c9;
+    margin: -9px;
+    padding: 5em 5em 2em 2em;
+}
+
+/* Header + knop */
+
+header nav {
+    background-color: #06183D;
+    margin: -0.5em;
+}
+
+header a {
+    background-color: rgb(251, 221, 15);
+    border-color: rgb(230, 230, 231);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.05) 2px 5px;
+    color: #55565A;
+    font-size: 0.6em;
+    padding: 9px 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Filteren en sorteren */
+
+form {
+    background-color: #ffffff;
+    /*Hieronder is een deel dat aangezet moet worden als de 'filteren en sorteren' knop wordt aangeklikt */
+    /* position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 10px;*/
+}
+
+/* Filteren en sorteren knop bovenaan */
+
+#filtersort a {
+    background-color: #e6e6e7;
+    border-radius: 8px;
+    color: #55565A;
+    font-size: 0.8em;
+    font-weight: normal;
+    padding: 9px 24px;
+    text-decoration: none;
+}
+
+#filtersort a:hover {
+    background-color: rgba(148, 148, 148, 0.2);
+    transition: all .2s ease-in-out;
+}
+
+/* Checkboxes gestyled, maar dit lukt niet.. */
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    color: #f2f2f2;
+}
+
+input[type="checkbox"] + label span {
+    background: url(checkboxnotchecked.svg) left top no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    height: 19px;
+    margin: -2px 10px 0 0;
+    vertical-align: middle;
+    width: 19px;
+
+}
+
+input[type="checkbox"]:checked + label span {
+    background: url(check_radio_sheet.png) -19px top no-repeat;
+}
+
+.hidden {
+    display: none;
+}
+
+/* De verhalen */
+
+article {
+    background-color: #ffffff;
+    border-color: rgb(230, 230, 231);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 5px 0px;
+    margin: 10px;
+    padding-bottom: 1.4em;
+}
+
+article a {
+    background-color: rgb(251, 221, 15);
+    border-color: rgb(230, 230, 231);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 5px 0px;
+    display: flex;
+    font-size: 0.6em;
+    justify-content: flex-end;
+    margin-left: 72%;
+    margin-right: 2%;
+    max-width: 14%;
+    padding: 9px 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.ster {
+    padding-left: 3%;
+    width: 12%;
+}
+
+.preview {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px
+}
+
+/* Footer */
+
+footer {
+    margin-top: 1em;
+}
