@@ -72,20 +72,29 @@ header a {
     text-transform: uppercase;
 }
 
-/* Filteren en sorteren */
+/* Filteren en sorteren niet kloppend: */
 
-form {
+/*section header {
     background-color: #ffffff;
-    /*Hieronder is een deel dat aangezet moet worden als de 'filteren en sorteren' knop wordt aangeklikt */
-    /* position: absolute;
+    Hieronder is een deel dat aangezet moet worden als de 'filteren en sorteren' knop wordt aangeklikt
+    position: absolute;
     left: 0px;
     top: 0px;
-    padding: 10px;*/
-}
+    padding: 10px;
+}*/
+
+/*form {
+    background-color: #ffffff;
+    Hieronder is een deel dat aangezet moet worden als de 'filteren en sorteren' knop wordt aangeklikt
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 10px;
+}*/
 
 /* Filteren en sorteren knop bovenaan */
 
-#filtersort a {
+#filteren {
     background-color: #e6e6e7;
     border-radius: 8px;
     color: #55565A;
@@ -95,12 +104,12 @@ form {
     text-decoration: none;
 }
 
-#filtersort a:hover {
+#filteren:hover {
     background-color: rgba(148, 148, 148, 0.2);
     transition: all .2s ease-in-out;
 }
 
-/* Checkboxes gestyled, maar dit lukt niet.. */
+/* Checkboxes gestyled, maar dit lukt niet..
 
 input[type="checkbox"] {
     display: none;
@@ -124,6 +133,7 @@ input[type="checkbox"] + label span {
 input[type="checkbox"]:checked + label span {
     background: url(check_radio_sheet.png) -19px top no-repeat;
 }
+*/
 
 .hidden {
     display: none;
@@ -171,3 +181,82 @@ article a {
 footer {
     margin-top: 1em;
 }
+
+/* Filteren en sorteren wel kloppend!! */
+
+section header h2 {
+    font-size: 1em;
+    font-weight: 700;
+    color: rgb(85, 86, 90);
+}
+
+
+#kruisje {
+    display: flex;
+    justify-content: flex-start;
+    border: none;
+    height: 16;
+    width: 16;
+}
+
+#herstel {
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+    text-decoration: underline;
+    font-size: 1em;
+    color: rgb(16, 159, 179);
+}
+
+section header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(230, 230, 231);
+    height: 58px;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#toonresultaten {
+    background-color: rgb(251, 221, 15);
+    text-transform: uppercase;
+    font-size: 18px;
+    border-color: rgb(230, 230, 231);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 5px 0px;
+    width: 100%;
+    padding: 16px 30px;
+    border-radius: 4px;
+    position: absolute;
+    top: 100%;
+}
+
+.filtersorteer li {
+    list-style-type: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    margin-left: -20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid rgb(230, 230, 231);
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.filtersorteer a {
+    text-decoration: none;
+    color: rgb(85, 86, 90);
+}
+
+.filtersorteer {
+    background-color: #ffffff;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 50%;
+}
+
